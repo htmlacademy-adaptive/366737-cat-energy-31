@@ -1,24 +1,106 @@
 .present {
+  position: relative;
   color: var(--text-light-color, inherit);
+  margin-top: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 72px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 288px;
+    margin: 0;
+  }
+}
+
+.present::before,
+.present::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.present::before {
+  background-color: var(--cat-back, #414146);
+  background-image: linear-gradient(var(--background-color, rgba(104, 183, 56, 0.85)) 100%, var(--cat-gradient, #68b738)), url("../../images/cat-present-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/cat-present-mobile@2x.png");
+    background-size: 280px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-image: url("../../images/cat-present-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-present-tablet@2x.png");
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/cat-present-desktop@1x.png");
+    background-size: 245px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/cat-present-desktop@2x.png");
+      background-size: 245px auto;
+    }
+  }
 }
 
 .present__title {
-  padding: 58px 60px;
+  padding: 60px 57px 43px;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
   color: var(--text-light-color, inherit);
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    align-items: center;
+    margin: 0;
+    margin-right: 48px;
+    margin-left: auto;
+    padding: 60px 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    text-align: center;
+    padding: 60px 40px 39px;
+    margin: 0;
+  }
 }
 
 .present__title::before {
   content: "";
   display: block;
   margin: auto;
-  margin-bottom: 20px;
-  background-image: url("../../icons/bonus.svg");
+  margin-bottom: 47px;
+  background-image: url("../../icons/stack.svg#bonus");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   width: 78;
   height: 80;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    margin-bottom: 47px;
+  }
 }
