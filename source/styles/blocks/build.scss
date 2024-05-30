@@ -142,6 +142,7 @@
     padding: 0;
     margin-top: 32px;
     margin-bottom: 24px;
+    max-width: 75%;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,6 +162,7 @@
   box-shadow: 0 1px 0 0 var(--border-secondary, #d9d9d9);
 
   @media (min-width: $tablet-width) {
+    box-shadow: none;
     width: 57%;
     font-size: 16px;
     line-height: 1.5;
@@ -176,6 +178,7 @@
 .build__link {
   display: flex;
   gap: 15px;
+  width: max-content;
   font-family: var(--font-secondary, inherit);
   font-size: 16px;
   line-height: 1;
@@ -191,24 +194,28 @@
   }
 }
 
+.build__link:active {
+  opacity: 30%;
+}
+
 .build__link::after {
   content: "";
-  display: inline-block;
-  width: 35px;
-  height: 15px;
-  mask-image: url("../../icons/stack.svg#icon_arrow");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background-color: var(--arrow, #000000);
+  display: block;
+  width: 32px;
+  height: 12px;
+  background-image: url("../../icons/stack.svg#icon_arrow");
+  background-repeat: no-repeat;
+  background-position: -8px;
+  background-size: contain;
+  color: var(--arrow, #000000);
 }
 
 .build__link:hover::after {
-  width: 32px;
+  background-position: 0;
   transition: 0.5s;
 }
 
-.build__link:active {
-  width: 32px;
-  transition: 0.5s;
+.build__link:active::after {
+  background-position: 0;
   opacity: 30%;
 }

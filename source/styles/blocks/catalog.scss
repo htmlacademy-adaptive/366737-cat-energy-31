@@ -24,7 +24,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin: 0;
-    margin-bottom: 86px;
+    margin-bottom: 90px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +63,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 30px;
   justify-content: center;
+  align-items: start;
   list-style-type: none;
   margin: 0;
   padding: 0;
