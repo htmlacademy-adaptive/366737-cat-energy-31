@@ -1,0 +1,38 @@
+.subscribe {
+  margin-top: 40px;
+}
+
+.subscribe__title {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
+}
+
+.subscribe__description {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: var(--font-secondary, inherit);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary-color, inherit);
+
+  @media (min-width: $tablet-width) {
+    max-width: 635px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.33;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 752px;
+  }
+}

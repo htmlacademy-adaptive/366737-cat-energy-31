@@ -1,7 +1,8 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Мария Бадулина](https://up.htmlacademy.ru/adaptive/31/user/366737).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Cat Energy](https://melante.github.io/366737-cat-energy-31/).
 
 ---
 

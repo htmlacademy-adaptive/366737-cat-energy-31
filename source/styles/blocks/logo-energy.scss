@@ -1,0 +1,22 @@
+.logo-energy {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 12px;
+  }
+}
+
+.logo-energy:hover {
+  @media (min-width: $desktop-width) {
+    opacity: 80%;
+  }
+}
+
+.logo-energy:active {
+  @media (min-width: $desktop-width) {
+    opacity: 60%;
+  }
+}
