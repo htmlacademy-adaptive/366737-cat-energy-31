@@ -3,6 +3,10 @@
   align-items: center;
   column-gap: 60px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 12px;
+  }
 }
 
 .logo-energy:hover {
