@@ -9,9 +9,32 @@
   line-height: 1;
   text-align: center;
   padding: 0;
-  margin-top: 10px;
-  width: 100%;
+  margin-top: 5px;
+  margin-bottom: -10px;
   left: 0;
   background-color: var(--text-light-color, #ffffff);
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-top: 7px;
+    gap: 36px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
+}
+
+.navigation-nojs-list {
+  width: 100vw;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 28px;
+  }
 }

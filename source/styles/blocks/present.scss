@@ -8,8 +8,8 @@
     linear-gradient(var(--background-color, rgba(104, 183, 56, 0.85)) 100%, var(--cat-gradient, #68b738)),
     image-set(url("../../images/cat-present-mobile@1x.webp") type("image/webp") 1x,
     url("../../images/cat-present-mobile@2x.webp") type("image/webp") 2x,
-    url("../../images/cat-present-mobile@1x.png") type("image/png") 1x,
-    url("../../images/cat-present-mobile@2x.png") type("image/png") 2x);
+    url("../../images/cat-present-mobile@1x.jpg") type("image/jpeg") 1x,
+    url("../../images/cat-present-mobile@2x.jpg") type("image/jpeg") 2x);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -20,8 +20,8 @@
       linear-gradient(var(--background-color, rgba(104, 183, 56, 0.85)) 100%, var(--cat-gradient, #68b738)),
       image-set(url("../../images/cat-present-tablet@1x.webp") type("image/webp") 1x,
       url("../../images/cat-present-tablet@2x.webp") type("image/webp") 2x,
-      url("../../images/cat-present-tablet@1x.png") type("image/png") 1x,
-      url("../../images/cat-present-tablet@2x.png") type("image/png") 2x);
+      url("../../images/cat-present-tablet@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/cat-present-tablet@2x.jpg") type("image/jpeg") 2x);
   }
 
   @media (min-width: $desktop-width) {
@@ -29,8 +29,8 @@
       linear-gradient(var(--background-color, rgba(104, 183, 56, 0.85)) 100%, var(--cat-gradient, #68b738)),
       image-set(url("../../images/cat-present-desktop@1x.webp") type("image/webp") 1x,
       url("../../images/cat-present-desktop@2x.webp") type("image/webp") 2x,
-      url("../../images/cat-present-desktop@1x.png") type("image/png") 1x,
-      url("../../images/cat-present-desktop@2x.png") type("Image/png") 2x);
+      url("../../images/cat-present-desktop@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/cat-present-desktop@2x.jpg") type("Image/jpeg") 2x);
   }
 
   @media (min-width: $tablet-width) {

@@ -1,12 +1,17 @@
 .catalog-card {
   position: relative;
   display: grid;
+  align-items: start;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   padding-top: 20px;
   padding-bottom: 25px;
+  height: auto;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     grid-template-columns: 1fr;
     max-width: 340px;
     padding: 10px 37px 40px;
@@ -187,6 +192,9 @@
   grid-column: -1/1;
   width: 100%;
   margin: 0 auto;
+  margin-top: auto;
+  text-decoration: none;
+  text-align: center;
 }
 
 .catalog-card__button--extra {
