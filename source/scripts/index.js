@@ -4,6 +4,7 @@ const nav = document.querySelector('.navigation__list');
 const block = document.querySelector('.navigation-nojs');
 const cross = document.querySelector('.navigation__toggle--bg');
 const list = document.querySelector('.navigation-nojs-list');
+const map = document.querySelector('.map__image');
 
 
 list.classList.remove('navigation-nojs-list');
@@ -14,3 +15,5 @@ burger.onclick = function() {
   burger.classList.toggle('navigation__toggle--open');
   nav.classList.toggle('navigation__list--open');
 };
+
+map.classList.add('map__image--nojs');
